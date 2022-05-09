@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1>typing speed test game</h1>
+    <div class="game">
+      <div class="container">
+        <div class="message">
+          You Are Playing On
+          <span class="lvl"></span> Level & You Have
+          <span class="seconds"></span> Seconds To Type The Word
+        </div>
+        <form action="/action_page.php">
+          <label for="level">Choose level:</label>
+          <select name="level" id="level">
+            
+            <option value="easy" index="5" selected>easy</option>
+            <option value="mid" index="4">mid</option>
+            <option value="hard" index="3">hard</option>
+          </select>
+          <div class="start" onclick="selectlevel()">Start Playing</div>
+        </form>
+
+        <div class="the-word"></div>
+        <input type="text" class="input" />
+
+        <div class="upcoming-words"></div>
+
+        <div class="control">
+          <div class="time">Time Left: <span>0</span> Seconds</div>
+          <div class="score">
+            Score: <span class="got">0</span> From <span class="total">0</span>
+          </div>
+        </div>
+        <div class="finish"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
